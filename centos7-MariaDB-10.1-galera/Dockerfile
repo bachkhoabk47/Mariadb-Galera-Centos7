@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER dayreiner
+MAINTAINER Cuong Tran "tranhuucuong91@gmail.com"
 
 ENV MARIADB_MAJOR=10.1
 
@@ -22,3 +22,4 @@ COPY scripts/docker-entrypoint.sh /docker-entrypoint.sh
 EXPOSE 3306
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["mysqld"]
+
